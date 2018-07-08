@@ -9,19 +9,13 @@ boolean BRAKE = false;
 //Accelerate toggle
 boolean ACCEL = false;
 
+//throttle
+int throttle = 0;
+
 //crusing speed
+int setThro = 40;
 
 //status light
+//highlow
+
 Servo esc;
- 
-void setup()
-{
-  esc.attach(9);
-}
- 
-void loop()
-{
-  int throttle = analogRead(throttlePin);
-  throttle = map(throttle, 0, 1023, 0, 179);
-  esc.write(throttle);
-}
