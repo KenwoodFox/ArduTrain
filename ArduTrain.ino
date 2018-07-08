@@ -18,4 +18,9 @@ int setThro = 40;
 //status light
 //highlow
 
+//clock cursor
+int clockTime = 8000;
+int clockCursor = 1;
+int clockPage = 1;
+
 Servo esc;

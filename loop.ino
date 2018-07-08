@@ -1,5 +1,6 @@
 void loop()
 {
+  runClock();
   if(ACCEL == true)
   {
     accelerate();
