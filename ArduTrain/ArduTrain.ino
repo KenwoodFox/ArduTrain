@@ -13,7 +13,7 @@ void loop()
 {
   set(180);
   delay(100);
-  set(120);
+  set(50);
   delay(100);
   set(0);
 
@@ -21,7 +21,7 @@ void loop()
 
 void set (int var)
 {
-  for (throttle = 0; throttle <= var; var += 1)
+  for (throttle = 0; throttle <= var; throttle += 1)
   {
     esc.write(throttle);
     delay(15);
